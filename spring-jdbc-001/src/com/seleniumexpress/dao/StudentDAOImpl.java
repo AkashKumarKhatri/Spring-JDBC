@@ -2,14 +2,20 @@ package com.seleniumexpress.dao;
 
 import javax.sql.DataSource;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
+import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
 
 import com.seleniumexpress.api.Student;
 
+
+//@Component("studentDao")
+@Repository("studentDao")
 public class StudentDAOImpl implements StudentDAO {
 
-	
+	@Autowired
 	private JdbcTemplate jdbcTemplate; //= new JdbcTemplate(getDataSource());
 	
 	public void setJdbcTemplate(JdbcTemplate jdbcTemplate) {

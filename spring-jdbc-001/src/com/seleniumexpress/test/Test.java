@@ -17,7 +17,7 @@ public class Test {
 		StudentDAO studentDAO = context.getBean("studentDao", StudentDAO.class);
 		
 		Student newStudent1 = new Student();
-		newStudent1.setRollNo(004);
+		newStudent1.setRollNo(006);
 		newStudent1.setName("Khalid");
 		newStudent1.setAddress("Karachi");
 		
